@@ -1,0 +1,13 @@
+﻿@model ShoeStore.Frontend.Models.SearchResult;
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+
+<p>Search Results</p>
+<ul>
+@foreach(var product in Model.Products){
+    <li>@product.Name</li>
+}   
+</ul>
